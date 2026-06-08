@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISMINI PAPANIKOLAOU Art Director</title>
+
+<!-- Favicon: red switch SVG embedded as data URI -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 481 481' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='481' height='481' fill='%230c0b10'/%3E%3Cpath fill='%23dc2626' d='m160.4 416.9 15.9 37.1h122.3l18.2-37.1 1.5-9.1-6.6-170.3V27.2H168l.004 210.1-8.85 170.5 1.3 9.1zm16.3-172.5h.35V36.3h125.6v205.8l6.6 165.7H168.2l8.5-163.4zm69.2-113.5h-10.6V60.1h10.6v70.8zm-6.8 210.3c-12.5 0-22.7 10.2-22.7 22.7 0 12.5 10.2 22.7 22.7 22.7 12.5 0 22.7-10.2 22.7-22.7 0-12.5-10.2-22.7-22.7-22.7zm0 36.3c-7.5 0-13.6-6.1-13.6-13.6 0-7.5 6.1-13.6 13.6-13.6 7.5 0 13.6 6.1 13.6 13.6 0 7.5-6.1 13.6-13.6 13.6zM127.1 0v481.2H354V0H127.1zm217.9 472.1H136.2V9.1H345v463z'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root {
+  --bg:     #0c0b10;
+  --bg1:    #141219;
+  --bg2:    #1e1b26;
+  --bg3:    #2e2a3a;
+  --dim:    #524d66;
+  --mid:    #8a84a0;
+  --light:  #c5c0d4;
+  --white:  #eeeaf8;
+  --purple: #7c3aed;
+  --purphi: #9d5ff5;
+  --red:    #dc2626;
+  --display:'Bebas Neue', sans-serif;
+  --body:   'DM Sans', sans-serif;
+}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--white);font-family:var(--body);font-size:15px;font-weight:400;line-height:1.6;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+img{display:block;}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 3rem;
+  background:rgba(12,11,16,0.93);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--bg2);
+}
+.nav-left{display:flex;align-items:center;gap:0.9rem;}
+
+/* Red switch in nav — exact shape from SVG, rendered inline */
+.nav-switch{width:18px;height:36px;flex-shrink:0;}
+.nav-switch svg{width:100%;height:100%;}
+
+.nav-logo{font-family:var(--display);font-size:1.4rem;letter-spacing:0.1em;color:var(--white);}
+.nav-links{display:flex;gap:2.5rem;list-style:none;}
+.nav-links a{font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--dim);transition:color 0.15s;}
+.nav-links a:hover{color:var(--white);}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;display:flex;flex-direction:column;justify-content:center;
+  padding:7rem 3rem 4rem;border-bottom:1px solid var(--bg2);
+  position:relative;overflow:hidden;
+}
+.hero-name{position:relative;z-index:2;font-family:var(--display);line-height:0.88;letter-spacing:0.01em;}
+.hero-name .l1{font-size:clamp(5.5rem,14vw,13rem);display:block;color:var(--white);}
+.hero-name .l2{font-size:clamp(3.8rem,9.5vw,8.8rem);display:block;color:var(--purple);white-space:nowrap;}
+.hero-meta{margin-top:1.4rem;display:flex;flex-direction:column;gap:0.2rem;}
+.hero-bottom{
+  position:relative;z-index:2;margin-top:3rem;padding-top:2rem;
+  border-top:1px solid var(--bg2);
+}
+.hero-desc{font-size:15px;color:var(--mid);max-width:44rem;line-height:1.75;}
+.hero-right-block{display:flex;flex-direction:column;align-items:flex-end;gap:1rem;flex-shrink:0;}
+.hero-left-block{display:flex;flex-direction:column;align-items:flex-start;gap:1rem;}
+.hero-meta-role{font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--light);}
+.hero-meta-loc{font-size:12px;color:var(--dim);letter-spacing:0.06em;}
+.hero-meta-status{font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--red);}
+
+.btn{
+  display:inline-block;padding:0.75rem 2rem;
+  font-family:var(--body);font-weight:700;font-size:12px;
+  letter-spacing:0.12em;text-transform:uppercase;
+  background:var(--purple);color:var(--white);
+  border:2px solid var(--purple);transition:background 0.15s,color 0.15s;
+}
+.btn:hover{background:transparent;color:var(--purple);}
+
+/* ── TICKER ── */
+.ticker{overflow:hidden;white-space:nowrap;padding:0.55rem 0;background:var(--purple);}
+.ticker-track{display:inline-flex;animation:tick 26s linear infinite;}
+.ticker-track span{font-family:var(--body);font-weight:700;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;padding:0 1.8rem;color:rgba(255,255,255,0.85);}
+.ticker-track .sep{color:rgba(255,255,255,0.3);padding:0 0.2rem;}
+@keyframes tick{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* ── SECTION BASE ── */
+.section{padding:5rem 3rem;border-bottom:1px solid var(--bg2);}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--red);margin-bottom:0.4rem;}
+.sec-title{font-family:var(--display);font-size:clamp(3rem,7vw,6rem);line-height:0.92;letter-spacing:0.01em;margin-bottom:3.5rem;}
+
+/* ── WORK GRID ── */
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;}
+
+.wi{position:relative;overflow:hidden;background:var(--bg1);aspect-ratio:4/3;}
+.wi img,.wi video{width:100%;height:100%;object-fit:cover;display:block;}
+.wi img{filter:saturate(0.3) brightness(0.88);transition:filter 0.5s,transform 0.65s cubic-bezier(.25,.46,.45,.94);}
+.wi:hover img{filter:saturate(1) brightness(1);transform:scale(1.04);}
+.wi video{transition:transform 0.65s cubic-bezier(.25,.46,.45,.94);}
+.wi:hover video{transform:scale(1.04);}
+
+/* First item spans full width as hero piece */
+.wi:nth-child(1){grid-column:1/-1;aspect-ratio:21/9;}
+
+/* ── VIDEO REEL ── */
+.reel-section{padding:5rem 3rem;border-bottom:1px solid var(--bg2);}
+.reel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+.reel-item{position:relative;overflow:hidden;background:var(--bg1);aspect-ratio:16/9;}
+.reel-item video{width:100%;height:100%;object-fit:cover;display:block;}
+.reel-item:hover video{transform:scale(1.02);}
+video{transition:transform 0.5s ease;}
+
+/* ── CLIENT LOGOS ── */
+.clients-section{background:#fff;padding:3.5rem 3rem;border-bottom:1px solid #e0dce8;}
+.clients-label{font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#aaa;margin-bottom:2rem;text-align:center;font-family:var(--body);}
+.logo-wrap{overflow:hidden;position:relative;}
+.logo-wrap::before,.logo-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none;}
+.logo-wrap::before{left:0;background:linear-gradient(to right,#fff,transparent);}
+.logo-wrap::after{right:0;background:linear-gradient(to left,#fff,transparent);}
+.logo-track{display:flex;align-items:center;animation:logos 30s linear infinite;width:max-content;}
+.logo-track:hover{animation-play-state:paused;}
+.logo-item{display:flex;align-items:center;justify-content:center;padding:0 2.5rem;height:56px;flex-shrink:0;opacity:0.5;filter:grayscale(100%);transition:opacity 0.25s,filter 0.25s;}
+.logo-item:hover{opacity:1;filter:none;}
+.logo-item img{max-height:36px;max-width:110px;object-fit:contain;}
+@keyframes logos{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 2fr;gap:5rem;align-items:start;}
+.about-photo{width:100%;aspect-ratio:3/4;object-fit:cover;filter:saturate(0.15) contrast(1.1);transition:filter 0.5s;}
+.about-photo:hover{filter:saturate(0.55) contrast(1.05);}
+.about-bio{font-size:15px;color:var(--light);line-height:1.8;margin-bottom:1.5rem;}
+.about-bio strong{color:var(--white);font-weight:600;}
+
+.career{margin:2.5rem 0;border-top:1px solid var(--bg2);}
+.career-row{display:grid;grid-template-columns:160px 1fr;gap:1.5rem;padding:1.1rem 0;border-bottom:1px solid var(--bg2);}
+.cr-co{font-size:14px;font-weight:700;color:var(--white);}
+.cr-city{display:block;font-size:11px;font-weight:400;color:var(--dim);margin-top:2px;}
+.cr-clients{font-size:13px;color:var(--mid);line-height:1.65;}
+
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:2rem;}
+.tag{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--dim);border:1px solid var(--bg3);padding:5px 13px;transition:border-color 0.2s,color 0.2s;}
+.tag:hover{border-color:var(--purple);color:var(--purphi);}
+
+/* ── EDU ── */
+.edu-row{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+.edu-card{display:block;background:var(--bg1);padding:2rem;border-top:3px solid var(--bg3);transition:border-color 0.2s;text-decoration:none;color:inherit;}
+.edu-card:hover{border-color:var(--purple);}
+.edu-type{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--dim);margin-bottom:0.75rem;}
+.edu-name{font-size:1.1rem;font-weight:700;color:var(--white);line-height:1.3;margin-bottom:0.4rem;}
+.edu-sub{font-size:13px;color:var(--mid);line-height:1.5;}
+
+.lang-row{display:flex;gap:3rem;flex-wrap:wrap;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--bg2);}
+.lang-lbl{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--dim);margin-bottom:3px;}
+.lang-val{font-size:15px;font-weight:700;color:var(--light);}
+
+/* ── CONTACT ── */
+.contact-section{padding:6rem 3rem 5rem;}
+.contact-heading{font-family:var(--display);font-size:clamp(4.5rem,11vw,10rem);line-height:0.9;letter-spacing:0.01em;margin-bottom:3rem;}
+.contact-heading .cp{color:var(--purple);}
+.contact-heading .cr{color:var(--red);}
+.contact-links{display:flex;flex-direction:column;gap:1.5rem;max-width:36rem;}
+.cl-lbl{font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-bottom:4px;}
+.cl-val a{font-size:15px;font-weight:500;color:var(--light);border-bottom:1px solid var(--bg3);padding-bottom:2px;transition:color 0.15s,border-color 0.15s;}
+.cl-val a:hover{color:var(--purphi);border-color:var(--purple);}
+
+/* ── FOOTER ── */
+footer{padding:1.5rem 3rem;border-top:1px solid var(--bg2);display:flex;justify-content:space-between;align-items:center;}
+.footer-name{font-family:var(--display);font-size:1.3rem;letter-spacing:0.08em;color:var(--bg3);}
+.footer-r{font-size:11px;color:var(--dim);text-align:right;line-height:1.7;}
+
+/* ── ANIMATIONS ── */
+@keyframes fi{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+.fi1{animation:fi .8s ease .1s both;}
+.fi2{animation:fi .8s ease .3s both;}
+.fi3{animation:fi .8s ease .48s both;}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.on{opacity:1;transform:none;}
+.reveal.d1{transition-delay:.1s;}
+.reveal.d2{transition-delay:.2s;}
+.reveal.d3{transition-delay:.3s;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:860px){
+  nav{padding:1rem 1.5rem;}
+  .nav-links{gap:1.2rem;}
+  .nav-links a{font-size:11px;letter-spacing:0.08em;}
+  .hero{padding:6.5rem 1.5rem 3rem;}
+  .hero-name .l1{font-size:clamp(3.5rem,18vw,6rem);}
+  .hero-name .l2{font-size:clamp(2rem,11vw,4rem);white-space:normal;}
+  .hero-bottom{margin-top:2rem;padding-top:1.5rem;}
+  .hero-left-block{gap:0.75rem;}
+  .section,.contact-section{padding:3.5rem 1.5rem;}
+  .clients-section{padding:3rem 1.5rem;}
+  .work-grid{grid-template-columns:1fr;gap:4px;}
+  .wi{aspect-ratio:16/9!important;grid-column:1/-1!important;}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .edu-row{grid-template-columns:1fr;}
+  .career-row{grid-template-columns:1fr;gap:0.4rem;}
+  .contact-heading{font-size:clamp(3rem,15vw,6rem);}
+  .lang-row{gap:1.5rem;}
+  footer{padding:1.2rem 1.5rem;}
+  .footer-name{font-size:1rem;}
+}
+@media(max-width:480px){
+  .nav-links{gap:0.8rem;}
+  .nav-links a{font-size:10px;}
+  .hero-name .l2{font-size:clamp(1.6rem,9.5vw,3rem);}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <!-- Red switch SVG inline -->
+    <div class="nav-switch" aria-hidden="true">
+      <svg viewBox="0 0 481 481" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#dc2626" d="m160.4 416.9 15.9 37.1h122.3l18.2-37.1 1.5-9.1-6.6-170.3V27.2H168l.004 210.1-8.85 170.5 1.3 9.1zm16.3-172.5h.35V36.3h125.6v205.8l6.6 165.7H168.2l8.5-163.4zm69.2-113.5h-10.6V60.1h10.6v70.8zm-6.8 210.3c-12.5 0-22.7 10.2-22.7 22.7 0 12.5 10.2 22.7 22.7 22.7 12.5 0 22.7-10.2 22.7-22.7 0-12.5-10.2-22.7-22.7-22.7zm0 36.3c-7.5 0-13.6-6.1-13.6-13.6 0-7.5 6.1-13.6 13.6-13.6 7.5 0 13.6 6.1 13.6 13.6 0 7.5-6.1 13.6-13.6 13.6zM127.1 0v481.2H354V0H127.1zm217.9 472.1H136.2V9.1H345v463z"/>
+      </svg>
+    </div>
+    <span class="nav-logo">ISMINI</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#clients">Clients</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-name fi1">
+    <span class="l1">ISMINI</span>
+    <span class="l2">PAPANIKOLAOU</span>
+  </div>
+  <div class="hero-meta fi2">
+    <p class="hero-meta-role">Art Director</p>
+    <p class="hero-meta-loc">Based in Oslo, Norway</p>
+    <p class="hero-meta-status">Available for projects</p>
+  </div>
+  <div class="hero-bottom fi3">
+    <div class="hero-left-block">
+      <p class="hero-desc">Six years working across top Athens agencies, building brands that cut through with creative direction, motion design and visual storytelling. Now based in Oslo.</p>
+      <a href="#work" class="btn">View Work ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Art Direction</span><span class="sep"> / </span>
+    <span>Branding</span><span class="sep"> / </span>
+    <span>Motion Design</span><span class="sep"> / </span>
+    <span>Graphic Design</span><span class="sep"> / </span>
+    <span>Social Media</span><span class="sep"> / </span>
+    <span>360° Campaign Development</span><span class="sep"> / </span>
+    <span>Visual Storytelling</span><span class="sep"> / </span>
+    <span>Storyboards</span><span class="sep"> / </span>
+    <span>Concept Development</span><span class="sep"> / </span>
+    <span>Art Direction</span><span class="sep"> / </span>
+    <span>Branding</span><span class="sep"> / </span>
+    <span>Motion Design</span><span class="sep"> / </span>
+    <span>Graphic Design</span><span class="sep"> / </span>
+    <span>Social Media</span><span class="sep"> / </span>
+    <span>360° Campaign Development</span><span class="sep"> / </span>
+    <span>Visual Storytelling</span><span class="sep"> / </span>
+    <span>Storyboards</span><span class="sep"> / </span>
+    <span>Concept Development</span><span class="sep"> / </span>
+  </div>
+</div>
+
+<!-- WORK -->
+<section id="work" class="section">
+  <p class="sec-label reveal">Selected Projects</p>
+  <h2 class="sec-title reveal d1">WORK</h2>
+
+  <div class="work-grid">
+    <div class="wi reveal">
+      <img src="work-mentos-freshness.png" alt="Project">
+    </div>
+    <div class="wi reveal d1">
+      <img src="work-chupachups.jpg" alt="Project">
+    </div>
+    <div class="wi reveal">
+      <img src="work-mentos-garlic.png" alt="Project">
+    </div>
+    <div class="wi reveal d1">
+      <img src="work-duo.png" alt="Project">
+    </div>
+    <div class="wi reveal">
+      <img src="work-mentos-power.png" alt="Project">
+    </div>
+    <div class="wi reveal">
+      <img src="work-corona-metro.jpg" alt="Project">
+    </div>
+    <div class="wi reveal">
+      <img src="work-astrazeneca.jpg" alt="Project">
+    </div>
+    <div class="wi reveal d1">
+      <img src="work-everest.jpg" alt="Project">
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients" class="clients-section">
+  <p class="clients-label">Clients &amp; Brands</p>
+  <div class="logo-wrap">
+    <div class="logo-track">
+      <div class="logo-item"><img src="logo-novibet.png" alt="Novibet"></div>
+      <div class="logo-item"><img src="logo-mentos.png" alt="Mentos"></div>
+      <div class="logo-item"><img src="logo-papadopoulos.png" alt="Papadopoulos"></div>
+      <div class="logo-item"><img src="logo-msd.png" alt="MSD"></div>
+      <div class="logo-item"><img src="logo-astrazeneca.png" alt="AstraZeneca"></div>
+      <div class="logo-item"><img src="logo-bioten.png" alt="Bioten"></div>
+      <div class="logo-item"><img src="logo-bentley.png" alt="Bentley"></div>
+      <div class="logo-item"><img src="logo-chupachups.png" alt="Chupa Chups"></div>
+      <div class="logo-item"><img src="logo-corona.png" alt="Corona"></div>
+      <div class="logo-item"><img src="logo-frezyderm.png" alt="Frezyderm"></div>
+      <div class="logo-item"><img src="logo-jackdaniels.png" alt="Jack Daniel's"></div>
+      <!-- duplicate for seamless loop -->
+      <div class="logo-item"><img src="logo-novibet.png" alt="Novibet"></div>
+      <div class="logo-item"><img src="logo-mentos.png" alt="Mentos"></div>
+      <div class="logo-item"><img src="logo-papadopoulos.png" alt="Papadopoulos"></div>
+      <div class="logo-item"><img src="logo-msd.png" alt="MSD"></div>
+      <div class="logo-item"><img src="logo-astrazeneca.png" alt="AstraZeneca"></div>
+      <div class="logo-item"><img src="logo-bioten.png" alt="Bioten"></div>
+      <div class="logo-item"><img src="logo-bentley.png" alt="Bentley"></div>
+      <div class="logo-item"><img src="logo-chupachups.png" alt="Chupa Chups"></div>
+      <div class="logo-item"><img src="logo-corona.png" alt="Corona"></div>
+      <div class="logo-item"><img src="logo-frezyderm.png" alt="Frezyderm"></div>
+      <div class="logo-item"><img src="logo-jackdaniels.png" alt="Jack Daniel's"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <p class="sec-label reveal">The person behind the work</p>
+  <h2 class="sec-title reveal d1">ABOUT</h2>
+  <div class="about-grid">
+    <div class="reveal">
+      <img class="about-photo" src="portrait.png" alt="Ismini Papanikolaou">
+    </div>
+    <div class="reveal d1">
+      <p class="about-bio">Since 2020, I have been shaping <strong>visual narratives</strong> across some of Athens' top agencies, bringing ideas to life through art direction, graphic design, motion and concept development. My work has always been a <strong>collaborative effort</strong> within creative teams, blending strategic thinking with meticulous attention to detail.</p>
+      <p class="about-bio">I incorporate <strong>innovative AI technologies</strong> in my creative process to streamline workflows and elevate quality, creating work that is both aesthetically refined and <strong>commercially effective</strong>.</p>
+      <div class="career">
+        <div class="career-row">
+          <div><span class="cr-co"><a href="https://4wisemonkeys.gr/" target="_blank" style="color:inherit;border-bottom:1px solid var(--bg3);padding-bottom:1px;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.color='var(--purphi)';this.style.borderColor='var(--purple)'" onmouseout="this.style.color='inherit';this.style.borderColor='var(--bg3)'">4 Wise Monkeys</a></span><span class="cr-city">Athens</span></div>
+          <div class="cr-clients">Novibet · Papadopoulou · Corona · Mentos · Chupa Chups · DUO · Everest · Jack Daniel's · Bioten · Tsakiris Chips</div>
+        </div>
+        <div class="career-row">
+          <div><span class="cr-co"><a href="https://www.advengers.gr/" target="_blank" style="color:inherit;border-bottom:1px solid var(--bg3);padding-bottom:1px;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.color='var(--purphi)';this.style.borderColor='var(--purple)'" onmouseout="this.style.color='inherit';this.style.borderColor='var(--bg3)'">Advengers</a></span><span class="cr-city">Athens</span></div>
+          <div class="cr-clients">Papadopoulou · Audi · Bentley · Praktiker · N1 Casino · Endless</div>
+        </div>
+        <div class="career-row">
+          <div><span class="cr-co"><a href="http://www.sleed.com/" target="_blank" style="color:inherit;border-bottom:1px solid var(--bg3);padding-bottom:1px;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.color='var(--purphi)';this.style.borderColor='var(--purple)'" onmouseout="this.style.color='inherit';this.style.borderColor='var(--bg3)'">Sleed</a></span><span class="cr-city">Athens</span></div>
+          <div class="cr-clients">Frezyderm · AstraZeneca · MSD · Toyotomi · Singer · Praktiker · Heron</div>
+        </div>
+      </div>
+      <div class="tags">
+        <span class="tag">Art Direction</span>
+        <span class="tag">Branding</span>
+        <span class="tag">Motion Design</span>
+        <span class="tag">Graphic Design</span>
+        <span class="tag">Storyboards</span>
+        <span class="tag">Social Media</span>
+        <span class="tag">360° Campaign Development</span>
+        <span class="tag">Creative Strategy</span>
+        <span class="tag">AI Workflows</span>
+        <span class="tag">Visual Storytelling</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <p class="sec-label reveal">The</p>
+  <h2 class="sec-title reveal d1">JOURNEY</h2>
+  <div class="edu-row">
+    <a href="https://www.kristiania.no/en/syllabus/faculty-of-society-arts-and-media/first-cycle-degree/wad/bachelor-in-art-direction/" target="_blank" class="edu-card reveal">
+      <p class="edu-type">Degree · In Progress</p>
+      <p class="edu-name">Bachelor in Art Direction</p>
+      <p class="edu-sub">Kristiania University · Oslo<br>Class of 2029</p>
+    </a>
+    <a href="https://www.42courses.com/certifications/14199" target="_blank" class="edu-card reveal d1">
+      <p class="edu-type">Workshop · Certificate</p>
+      <p class="edu-name">LIONS Nano MBA</p>
+      <p class="edu-sub">Creative Thinking · 42courses</p>
+    </a>
+    <a href="https://www.schoolofmotion.com/courses/after-effects-kickstart" target="_blank" class="edu-card reveal d2">
+      <p class="edu-type">Workshop · Certificate</p>
+      <p class="edu-name">Motion Design</p>
+      <p class="edu-sub">School of Motion<br>Professional Programme</p>
+    </a>
+  </div>
+  <div class="lang-row reveal">
+    <div><p class="lang-lbl">Gresk</p><p class="lang-val">Morsmål</p></div>
+    <div><p class="lang-lbl">Engelsk</p><p class="lang-val">Morsmål</p></div>
+    <div><p class="lang-lbl">Norsk</p><p class="lang-val">A2 <span style="font-size:12px;font-weight:400;color:var(--dim)">(snart B2)</span></p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <h2 class="contact-heading reveal">
+    LET'S<br>
+    <span class="cp">MAKE</span><br>
+    <span class="cr">STUFF.</span>
+  </h2>
+  <div class="contact-links">
+    <div class="reveal">
+      <p class="cl-lbl">Email</p>
+      <p class="cl-val"><a href="mailto:ismini.papa.1998@gmail.com">ismini.papa.1998@gmail.com</a></p>
+    </div>
+    <div class="reveal d1">
+      <p class="cl-lbl">Phone</p>
+      <p class="cl-val"><a href="tel:+4792071998">+47 920 71 998</a></p>
+    </div>
+    <div class="reveal d2">
+      <p class="cl-lbl">LinkedIn</p>
+      <p class="cl-val"><a href="https://www.linkedin.com/in/ismini-p-61894a90/" target="_blank">ismini-p-61894a90 ↗</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-name">ISMINI PAPANIKOLAOU</span>
+  <div class="footer-r">
+    <div>© 2025</div>
+    <div>Art Director · Oslo</div>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); obs.unobserve(e.target); }});
+}, {threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

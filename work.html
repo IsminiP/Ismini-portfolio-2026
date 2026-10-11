@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="pro" data-layout="even">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="description" content="Selected work by Ismini Papanikolaou: campaigns, packaging, social and Cannes Young Lions entries.">
+<link rel="canonical" href="https://ismini.eu/work.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ismini Papanikolaou">
+<meta property="og:title" content="Work — Ismini Papanikolaou">
+<meta property="og:description" content="Selected work by Ismini Papanikolaou: campaigns, packaging, social and Cannes Young Lions entries.">
+<meta property="og:url" content="https://ismini.eu/work.html">
+<meta property="og:image" content="https://ismini.eu/assets/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>Work — Ismini Papanikolaou</title>
+<script>
+(function(){
+  try {
+    var p = new URLSearchParams(location.search).get('mode');
+    var m = (p === 'unfiltered' || p === 'pro') ? p : localStorage.getItem('ismini-mode');
+    if (m === 'unfiltered') document.documentElement.setAttribute('data-mode', 'unfiltered');
+    if (localStorage.getItem('ismini-twist') === '1') document.documentElement.setAttribute('data-twist', '1');
+  } catch (e) {}
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Hanken+Grotesk:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfbfa; --fg: #121212; --muted: #74726e; --line: #dcdad6; --ph: #eeece8; --red: #d7261e;
+  --quiet: "Hanken Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --loud: "Bricolage Grotesque", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --pad: clamp(1.25rem, 5vw, 5rem);
+  --gap: clamp(0.75rem, 1.6vw, 1.5rem);
+  box-sizing: border-box; color-scheme: only light;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { height: 100%; scroll-padding-top: env(safe-area-inset-top, 0px); }
+body { margin: 0; min-height: 100%; background: var(--bg); color: var(--fg); font-family: var(--quiet); font-weight: 300; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+img, video { display: block; max-width: 100%; }
+
+/* Header (same as homepage) */
+.top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1.5rem var(--pad); }
+.logo { font-weight: 400; font-size: 1.05rem; text-decoration: none; letter-spacing: -0.01em; }
+.nav { display: flex; gap: clamp(1rem, 3vw, 2.25rem); font-size: 0.95rem; }
+.nav a { text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid transparent; }
+.nav a:hover, .nav a[aria-current="page"] { border-bottom-color: currentColor; }
+[data-mode="pro"] .u { display: none; }
+[data-mode="unfiltered"] .p { display: none; }
+[data-mode="unfiltered"] .top { font-family: var(--loud); }
+[data-mode="unfiltered"] .logo { font-weight: 700; }
+[data-mode="unfiltered"] .nav a { font-weight: 500; }
+
+main { padding: clamp(0.5rem, 2vw, 1.5rem) var(--pad) 8rem; }
+section + section { margin-top: clamp(4rem, 9vw, 8rem); }
+.sec-title { font-weight: 400; font-size: 0.95rem; margin: 0 0 1.25rem; color: var(--muted); }
+[data-mode="unfiltered"] .sec-title { font-family: var(--loud); font-weight: 500; color: var(--fg); }
+
+/* Tiles */
+.tile { display: block; text-decoration: none; position: relative; }
+.media { position: relative; overflow: hidden; background: var(--ph); }
+.media > img, .media > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.name {
+  position: absolute; left: 0.75rem; bottom: 0.75rem; z-index: 2;
+  background: var(--bg); color: var(--fg); font-size: 0.85rem; padding: 0.3rem 0.55rem;
+  opacity: 0; transform: translateY(4px); transition: opacity .2s ease, transform .2s ease;
+}
+.tile:hover .name, .tile:focus-visible .name, .tile:focus-within .name { opacity: 1; transform: none; }
+.tile:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; }
+@media (hover: none) { .name { display: none; } }
+.aside {
+  display: none; margin: 0.7rem 0 0; font-family: var(--loud); font-weight: 500;
+  font-size: 1rem; line-height: 1.35; color: var(--red);
+}
+[data-mode="unfiltered"] .aside { display: block; }
+.ph { display: grid; place-items: center; color: var(--muted); font-size: 0.8rem; text-align: center; padding: 1rem; }
+.ph > span { position: relative; }
+
+/* Layout A: consistent 4:5 */
+[data-layout="even"] .featured { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); align-items: start; }
+[data-layout="even"] .featured .media { aspect-ratio: 4 / 5; }
+[data-layout="even"] .lions .grid, [data-layout="even"] .more .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap); align-items: start; }
+[data-layout="even"] .lions .media, [data-layout="even"] .more .media { aspect-ratio: 4 / 5; }
+
+/* Layout B: original shapes */
+[data-layout="native"] .featured { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gap); align-items: start; }
+[data-layout="native"] .t-chupa { grid-column: 1 / span 4; grid-row: 1 / span 2; }
+[data-layout="native"] .t-chupa .media { aspect-ratio: 9 / 16; }
+[data-layout="native"] .t-pack { grid-column: 5 / span 8; grid-row: 1; }
+[data-layout="native"] .t-pack .media { aspect-ratio: 1472 / 792; }
+[data-layout="native"] .t-duo { grid-column: 9 / span 4; grid-row: 2; }
+[data-layout="native"] .t-duo .media { aspect-ratio: 1 / 1; }
+[data-layout="native"] .lions .grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gap); align-items: start; }
+[data-layout="native"] .lions .tile:nth-child(1) { grid-column: 1 / span 4; }
+[data-layout="native"] .lions .tile:nth-child(2) { grid-column: 6 / span 4; }
+[data-layout="native"] .lions .media { aspect-ratio: 1 / 1.414; }
+[data-layout="native"] .more .grid { columns: 4; column-gap: var(--gap); }
+[data-layout="native"] .more .tile { break-inside: avoid; margin-bottom: var(--gap); }
+[data-layout="native"] .more .media { aspect-ratio: var(--r); }
+
+@media (max-width: 760px) {
+  .logo .surname { display: none; }
+  [data-layout="even"] .featured { grid-template-columns: minmax(0, 1fr); }
+  [data-layout="even"] .lions .grid, [data-layout="even"] .more .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  [data-layout="native"] .featured, [data-layout="native"] .lions .grid { grid-template-columns: minmax(0, 1fr); }
+  [data-layout="native"] .t-chupa, [data-layout="native"] .t-pack, [data-layout="native"] .t-duo,
+  [data-layout="native"] .lions .tile:nth-child(n) { grid-column: 1; grid-row: auto; }
+  [data-layout="native"] .lions .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  [data-layout="native"] .more .grid { columns: 2; }
+}
+
+
+/* Project panel */
+body.locked { overflow: hidden; }
+.panel {
+  position: fixed; inset: 0; z-index: 30; background: var(--bg);
+  overflow-y: auto; overscroll-behavior: contain;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+  opacity: 0; visibility: hidden; transform: translateY(14px);
+  transition: opacity .28s ease, transform .28s ease, visibility 0s linear .28s;
+}
+.panel.open { opacity: 1; visibility: visible; transform: none; transition: opacity .28s ease, transform .28s ease; }
+.panel-bar {
+  position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: 1rem var(--pad); background: var(--bg); border-bottom: 1px solid var(--line); font-size: 0.9rem;
+}
+.panel-bar .crumb { color: var(--muted); }
+.close {
+  font: inherit; color: var(--fg); background: none; border: 1px solid var(--fg); border-radius: 999px;
+  padding: 0.4rem 1rem; cursor: pointer;
+}
+.close:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.board {
+  display: grid; grid-template-columns: minmax(16rem, 4fr) 8fr; gap: clamp(2rem, 5vw, 5rem);
+  padding: clamp(2rem, 5vw, 4.5rem) var(--pad) 9rem; align-items: start;
+}
+.brief { position: sticky; top: 5.5rem; }
+.brief h2 {
+  font-weight: 200; font-size: clamp(1.9rem, 3vw, 2.7rem); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 0.5rem;
+}
+[data-mode="unfiltered"] .brief h2 { font-family: var(--loud); font-weight: 700; letter-spacing: -0.03em; }
+.brief .kind { color: var(--muted); margin: 0 0 2rem; font-size: 0.95rem; }
+.brief .aside { margin: -1rem 0 2rem; font-size: 1.1rem; }
+.brief dl { margin: 0; }
+.brief dt { font-size: 0.82rem; color: var(--muted); padding-top: 1.1rem; border-top: 1px solid var(--line); margin: 0 0 0.45rem; }
+.brief dd { margin: 0 0 1.4rem; font-size: 1rem; line-height: 1.55; max-width: 34em; }
+.brief ul { list-style: none; margin: 0; padding: 0; }
+.visuals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); align-items: start; }
+.visuals figure { margin: 0; }
+.visuals .wide { grid-column: 1 / -1; }
+.visuals img, .visuals video { width: 100%; height: auto; background: var(--ph); }
+.visuals figcaption { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+.logo-hold { display: grid; place-items: center; background: #fff; padding: clamp(1.5rem, 5vw, 4rem); }
+.logo-hold img { width: min(100%, 420px); background: none; }
+@media (max-width: 860px) {
+  .board { grid-template-columns: minmax(0, 1fr); }
+  .brief { position: static; }
+}
+@media (max-width: 480px) {
+  .visuals { gap: 0.6rem; }
+}
+
+
+/* Video board panel */
+.panel:focus { outline: none; }
+.vboard {
+  display: grid; grid-template-columns: minmax(15rem, 3fr) 9fr; gap: clamp(2rem, 4vw, 4rem);
+  align-items: center; min-height: calc(100% - 3.6rem);
+  padding: clamp(1.5rem, 3vw, 3rem) max(var(--pad), 6.75rem) clamp(4rem, 7vw, 6rem) var(--pad);
+}
+.vlogo { width: min(100%, 230px); margin: 0 0 1.5rem -0.3rem; }
+.vtext h2 { font-weight: 300; font-size: clamp(1.4rem, 1.9vw, 1.85rem); line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 1.5rem; }
+.vtext h2:focus { outline: none; }
+[data-mode="unfiltered"] .vtext h2 { font-family: var(--loud); font-weight: 700; letter-spacing: -0.02em; }
+.vtext .aside { margin: -0.75rem 0 1.5rem; }
+.vtext .lbl { display: block; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.35rem; }
+.videa { margin: 0 0 1.25rem; padding-top: 0.9rem; border-top: 1px solid var(--line); font-size: 0.95rem; line-height: 1.55; }
+.vcols { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; padding-top: 0.9rem; border-top: 1px solid var(--line); font-size: 0.9rem; line-height: 1.55; }
+.vcols ul { list-style: none; margin: 0; padding: 0; }
+.vvisual { margin: 0; }
+.vcredit { margin: 1.25rem 0 0; }
+.vcredit a { text-decoration: none; border-bottom: 1px solid currentColor; }
+.vvisual.sq img { display: block; width: min(100%, calc(100vh - 9rem)); height: auto; aspect-ratio: 1 / 1; margin-inline: auto; background: var(--ph); }
+.vvisual video { display: block; width: 100%; height: auto; aspect-ratio: 1280 / 928; background: var(--ph); }
+@media (max-width: 900px) {
+  .vboard { grid-template-columns: minmax(0, 1fr); align-items: start; padding-right: var(--pad); }
+  .vvisual { margin: 0 calc(var(--pad) * -1); }
+  .vvisual.sq img { width: 100%; }
+}
+
+
+/* Young Lions: landscape posters in both layouts */
+[data-layout] .lions .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); align-items: start; columns: auto; }
+[data-layout] .lions .tile:nth-child(n) { grid-column: auto; }
+[data-layout] .lions .media { aspect-ratio: 1.414 / 1; }
+@media (max-width: 760px) { [data-layout] .lions .grid { grid-template-columns: minmax(0, 1fr); } }
+.vvisual.land img { display: block; width: 100%; height: auto; background: var(--ph); }
+
+
+/* More work: justified rows, original shapes, aligned edges */
+[data-layout] .more .grid { display: block; columns: auto; }
+.more .row { display: flex; gap: var(--gap); margin-bottom: var(--gap); align-items: flex-start; }
+[data-layout] .more .row .tile { flex: var(--r) 1 0; min-width: 0; margin: 0; }
+[data-layout] .more .row .media { aspect-ratio: var(--r); }
+@media (max-width: 760px) {
+  [data-layout] .more .grid { columns: 2; column-gap: 0.6rem; }
+  .more .row { display: contents; }
+  [data-layout] .more .row .tile { display: block; break-inside: avoid; margin-bottom: 0.6rem; }
+}
+
+/* Switch (fixed corner on inner pages) */
+.switch {
+  position: fixed; z-index: 40; padding: 0; border: 0; background: none; cursor: pointer; color: var(--red);
+  right: calc(1.25rem + env(safe-area-inset-right, 0px)); bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  width: clamp(58px, 4.6vw, 70px);
+}
+.switch svg { display: block; width: 100%; height: auto; }
+.switch:focus-visible { outline: 2px solid var(--red); outline-offset: 5px; }
+.sw { fill: currentColor; }
+.plate-bg { fill: var(--bg); }
+.paddle-on { opacity: 0; transition: opacity 70ms linear 40ms; }
+.paddle-off { opacity: 1; transition: opacity 70ms linear 40ms; }
+[data-mode="unfiltered"] .paddle-on { opacity: 1; }
+[data-mode="unfiltered"] .paddle-off { opacity: 0; }
+.mark-i { transform-box: view-box; transform: translateY(37px); transition: transform 110ms ease-out; }
+[data-mode="unfiltered"] .mark-i { transform: none; }
+@keyframes press { 0% { transform: scale(1); } 35% { transform: scale(.955); } 100% { transform: scale(1); } }
+.switch.press svg { animation: press .26s cubic-bezier(.34, 1.6, .5, 1); }
+@media (prefers-reduced-motion: reduce) {
+  .paddle-on, .paddle-off, .mark-i, .name, .panel { transition-duration: .01s !important; }
+  .switch.press svg { animation: none; }
+}
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.mark-o { transition: opacity .4s ease; }
+.mark-i2 { opacity: 0; transition: opacity .4s ease .2s; }
+[data-twist="1"] .mark-o { opacity: 0; }
+[data-twist="1"] .mark-i2 { opacity: 1; }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">Ismini<span class="surname"> Papanikolaou</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="work.html" aria-current="page"><span class="p">Work</span><span class="u">The stuff</span></a>
+    <a href="about.html"><span class="p">About</span><span class="u">Me, actually</span></a>
+    <a href="contact.html"><span class="p">Contact</span><span class="u">Say hi</span></a>
+  </nav>
+</header>
+
+
+
+<main>
+  <section class="featured" aria-label="Selected work">
+    <a class="tile t-chupa" href="#chupa-chups">
+      <div class="media">
+        <video class="loop" muted loop playsinline preload="metadata" poster="assets/work/chupa-loop.jpg" src="assets/work/chupa-loop.mp4" aria-hidden="true"></video>
+        <span class="name">Chupa Chups, Never Too Old For Fun</span>
+      </div>
+      <span class="sr-only">Chupa Chups, Never Too Old For Fun</span>
+    </a>
+    <a class="tile t-pack" href="#2plo-crush">
+      <div class="media">
+        <img src="assets/work/2plo-thumb.jpg" alt="2ΠΛΟ CRUSH protein bars in four flavours">
+        <span class="name">Papadopoulou, 2ΠΛΟ CRUSH</span>
+      </div>
+    </a>
+    <a class="tile t-duo" href="#duo">
+      <div class="media">
+        <img src="assets/work/duo-thumb.jpg" alt="DUO real-time Instagram post with a gold medal">
+        <span class="name">DUO, Real-Time Social Post</span>
+      </div>
+    </a>
+  </section>
+
+  <section class="lions" aria-labelledby="lions-h">
+    <h2 class="sec-title" id="lions-h">Cannes Young Lions</h2>
+    <div class="grid">
+      <a class="tile" href="#maigov"><div class="media"><img src="assets/work/young-lions-maigov.jpg" alt="mAigov print ad: a hiker with a map looks up at a dinosaur in a forest"><span class="name">mAigov, Young Lions 2024</span></div></a>
+      <a class="tile" href="#anima"><div class="media"><img src="assets/work/young-lions-anima.jpg" alt="ANIMA print ad: wild animals in life jackets on an orange dinghy at sea"><span class="name">ANIMA, Young Lions 2025</span></div></a>
+    </div>
+  </section>
+
+  <section class="more" aria-labelledby="more-h">
+    <h2 class="sec-title" id="more-h">More work</h2>
+    <div class="grid">
+      <div class="row">
+        <div class="tile" style="--r:0.8045"><div class="media"><img src="assets/more/chupa-stranger-things.jpg" alt="Merry Upside Down Christmas: a lollipop holding an upside-down world" loading="lazy"><span class="name">Chupa Chups x Stranger Things</span></div></div>
+        <div class="tile" style="--r:1.7778"><div class="media"><video class="loop" muted loop playsinline preload="none" poster="assets/more/novibet-nba.jpg" src="assets/more/novibet-nba.mp4" aria-label="Novibet NBA spot: basketball highlights"></video><span class="name">Novibet × NBA</span></div></div>
+      </div>
+      <div class="row">
+        <div class="tile" style="--r:0.8000"><div class="media"><img src="assets/more/mentos-garlic.jpg" alt="A woman with a garlic bulb for a head, next to a Mentos Pure Fresh jar" loading="lazy"><span class="name">Mentos Pure Fresh</span></div></div>
+        <div class="tile" style="--r:1.0000"><div class="media"><img src="assets/more/chupa-court.jpg" alt="A giant raspberry Chupa Chups on a basketball court surrounded by raspberries" loading="lazy"><span class="name">Chupa Chups</span></div></div>
+        <div class="tile" style="--r:1.0000"><div class="media"><img src="assets/more/duo-sexy-is.jpg" alt="DUO social post: Sexy is... your silly dance moves" loading="lazy"><span class="name">DUO</span></div></div>
+        <div class="tile" style="--r:0.8000"><div class="media"><img src="assets/more/mentos-strawberry.jpg" alt="A giant inflatable strawberry squeezed into a city street" loading="lazy"><span class="name">Mentos</span></div></div>
+      </div>
+      <div class="row">
+        <div class="tile" style="--r:0.8000"><div class="media"><video class="loop" muted loop playsinline preload="none" poster="assets/more/frezyderm.jpg" src="assets/more/frezyderm.mp4" aria-label="Cream turning into powder around a product tube"></video><span class="name">Frezyderm</span></div></div>
+        <div class="tile" style="--r:1.7778"><div class="media"><img src="assets/more/corona-metro.jpg" alt="Corona ads inside a metro carriage" loading="lazy"><span class="name">Corona</span></div></div>
+        <div class="tile" style="--r:0.7875"><div class="media"><img src="assets/more/noviverse.jpg" alt="Noviverse key visual: glowing planets rising from a phone" loading="lazy"><span class="name">Novibet, Noviverse</span></div></div>
+      </div>
+      <div class="row">
+        <div class="tile" style="--r:1.0000"><div class="media"><img src="assets/more/mentos-hero-taste.jpg" alt="Mentos Pure Fresh: choose your hero taste, strawberry and lemonade" loading="lazy"><span class="name">Mentos Pure Fresh</span></div></div>
+        <div class="tile" style="--r:0.8000"><div class="media"><img src="assets/more/mentos-power.jpg" alt="Yes to power: a raised arm holding a Mentos roll" loading="lazy"><span class="name">Mentos</span></div></div>
+        <div class="tile" style="--r:0.7612"><div class="media"><img src="assets/more/connected-we-stand.jpg" alt="Connected We Stand festival poster with flowers around a Thessaloniki arch" loading="lazy"><span class="name">Connected We Stand</span></div></div>
+        <div class="tile" style="--r:1.0000"><div class="media"><img src="assets/more/chupa-dog.jpg" alt="A boxer dog happily holding a Chupa Chups lollipop" loading="lazy"><span class="name">Chupa Chups</span></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<div class="panel" id="chupa-chups" role="dialog" aria-modal="true" aria-labelledby="chupa-h">
+  <div class="panel-bar"><button class="close" type="button">Close</button><span class="crumb">Selected work</span></div>
+  <div class="vboard">
+    <div class="vtext">
+      <img class="vlogo" src="assets/work/chupa-logo.gif" alt="Never Too Old For Fun campaign logo">
+      <h2 id="chupa-h" tabindex="-1">Chupa Chups<br>Never Too Old For Fun</h2>
+      <p class="videa"><span class="lbl">The idea</span>What if Chupa Chups' next influencer was a Greek yiayia? A social-first campaign proving you're never too old for fun — from parkour to calisthenics.</p>
+      <div class="vcols">
+        <div><span class="lbl">The campaign</span><ul><li>Influencer videos</li><li>Social media content</li><li>Contest</li><li>Landing page</li></ul></div>
+        <div><span class="lbl">My role</span><ul><li>Art Direction</li><li>Visual Identity</li><li>Campaign Logo</li><li>Social Content</li><li>Landing Page Design</li></ul></div>
+      </div>
+    </div>
+    <figure class="vvisual"><video class="loop" muted loop playsinline preload="none" poster="assets/work/chupa-board.jpg" src="assets/work/chupa-board.mp4" aria-label="Campaign board: the films, landing page and the granfluencer's profile"></video></figure>
+  </div>
+</div>
+
+<div class="panel" id="duo" role="dialog" aria-modal="true" aria-labelledby="duo-h">
+  <div class="panel-bar"><button class="close" type="button">Close</button><span class="crumb">Selected work</span></div>
+  <div class="vboard">
+    <div class="vtext">
+      <h2 id="duo-h" tabindex="-1">DUO<br>Real-Time Social Post</h2>
+      <p class="videa"><span class="lbl">Context</span>During the Paris 2024 Olympics, Greek long jumper Miltos Tentoglou was competing for gold.</p>
+      <p class="videa"><span class="lbl">Idea</span>A real-time, non-sponsored Instagram post, playing on a double meaning in Greek: “πηδάω” means both “to jump” and slang for “to fuck”.</p>
+      <p class="videa"><span class="lbl">Results</span>26K+ organic likes, widespread media coverage and Gold at the Social Media Awards 2025 for Best Real-Time Response / Occasion-based Marketing.</p>
+      <div class="vcols"><div><span class="lbl">My role</span>Art Direction &amp; Visual Execution.</div></div>
+    </div>
+    <figure class="vvisual sq"><img src="assets/work/duo-board.jpg" alt="The DUO post on Instagram, news coverage, and the team receiving Gold at the Social Media Awards 2025"></figure>
+  </div>
+</div>
+
+<div class="panel" id="2plo-crush" role="dialog" aria-modal="true" aria-labelledby="plo-h">
+  <div class="panel-bar"><button class="close" type="button">Close</button><span class="crumb">Selected work</span></div>
+  <div class="vboard">
+    <div class="vtext">
+      <h2 id="plo-h" tabindex="-1">Papadopoulou<br>2ΠΛΟ CRUSH</h2>
+      <p class="videa"><span class="lbl">Challenge</span>Take an established biscuit brand into the chocolate bar category, keeping it recognisably 2ΠΛΟ while giving it a fresh, bold identity of its own.</p>
+      <p class="videa"><span class="lbl">Design</span>I developed the 2ΠΛΟ CRUSH visual direction and packaging system across four flavours, balancing strong shelf impact with clear flavour and protein differentiation.</p>
+      <div class="vcols">
+        <div><span class="lbl">Outcome</span>The direction was selected by the client for further development.</div>
+        <div><span class="lbl">My role</span>Concept, Art Direction &amp; Packaging Design.</div>
+      </div>
+    </div>
+    <figure class="vvisual sq"><img src="assets/work/2plo-board.jpg" alt="2ΠΛΟ CRUSH packaging in four flavours, with the established 2ΠΛΟ biscuit range below"></figure>
+  </div>
+</div>
+
+<div class="panel" id="maigov" role="dialog" aria-modal="true" aria-labelledby="mai-h">
+  <div class="panel-bar"><button class="close" type="button">Close</button><span class="crumb">Cannes Young Lions</span></div>
+  <div class="vboard">
+    <div class="vtext">
+      <h2 id="mai-h" tabindex="-1">mAigov<br>AI assistant</h2>
+      <p class="videa"><span class="lbl">Brief</span>Introduce the Greek government's new AI assistant.</p>
+      <p class="videa"><span class="lbl">Idea</span>Greek bureaucracy can lead you to unexpected surprises.</p>
+      <div class="vcols">
+        <div><span class="lbl">Year</span>Young Lions 2024</div>
+        <div><span class="lbl">My role</span>Concept, Art Direction, Visual Execution</div>
+      </div>
+      <p class="videa vcredit"><span class="lbl">Team</span>With <a href="https://www.behance.net/erosandrou6291" target="_blank" rel="noopener">Eros Androulidakis</a></p>
+    </div>
+    <figure class="vvisual land"><img src="assets/work/young-lions-maigov.jpg" alt="mAigov print ad: a hiker with a map looks up at a dinosaur in a forest"></figure>
+  </div>
+</div>
+
+<div class="panel" id="anima" role="dialog" aria-modal="true" aria-labelledby="ani-h">
+  <div class="panel-bar"><button class="close" type="button">Close</button><span class="crumb">Cannes Young Lions</span></div>
+  <div class="vboard">
+    <div class="vtext">
+      <h2 id="ani-h" tabindex="-1">ANIMA<br>Wildlife protection</h2>
+      <p class="videa"><span class="lbl">Brief</span>Raise awareness about wild animals being displaced into towns and cities.</p>
+      <p class="videa"><span class="lbl">Idea</span>They may arrive in our cities, but they still belong in the wild.</p>
+      <div class="vcols">
+        <div><span class="lbl">Year</span>Young Lions 2025</div>
+        <div><span class="lbl">My role</span>Concept, Art Direction, Visual Execution</div>
+      </div>
+      <p class="videa vcredit"><span class="lbl">Team</span>With <a href="https://filitsamoutousicreative.myportfolio.com/" target="_blank" rel="noopener">Filitsa Moutousi</a></p>
+    </div>
+    <figure class="vvisual land"><img src="assets/work/young-lions-anima.jpg" alt="ANIMA print ad: wild animals in life jackets on an orange dinghy at sea"></figure>
+  </div>
+</div>
+
+<button class="switch" id="switch" role="switch" aria-checked="false" aria-label="Unfiltered mode">
+  <svg viewBox="117 -10 247 501" aria-hidden="true">
+    <rect class="plate-bg" x="136" y="9" width="209" height="463"/>
+    <path class="sw" fill-rule="evenodd" d="M127.104 0v481.187h226.978V0H127.104z M345.001 472.106H136.183V9.072H345.01v463.034h-.009z"/>
+    <g class="paddle paddle-on"><path class="sw" fill-rule="evenodd" d="M160.426 416.879L176.317 453.956H298.665L316.819 416.879L318.345 407.794L311.709 237.536V27.237H167.959L167.963 237.372L159.11 407.794Z M176.688 244.379H177.042V36.309H302.633V242.102L309.266 407.793H168.204Z"/></g>
+    <g class="paddle paddle-off"><g transform="matrix(1 0 0 -1 0 481.187)"><path class="sw" fill-rule="evenodd" d="M160.426 416.879L176.317 453.956H298.665L316.819 416.879L318.345 407.794L311.709 237.536V27.237H167.959L167.963 237.372L159.11 407.794Z M176.688 244.379H177.042V36.309H302.633V242.102L309.266 407.793H168.204Z"/></g></g>
+    <path class="sw mark-i" d="M245.887 130.887h-10.593V60.134h10.593v70.753z"/>
+    <path class="sw mark-o" fill-rule="evenodd" d="M239.08 341.225c-12.512 0-22.698 10.17-22.698 22.696 0 12.509 10.182 22.697 22.698 22.697 12.52 0 22.702-10.188 22.702-22.697 0-12.526-10.19-22.696-22.702-22.696z M239.08 377.528c-7.506 0-13.623-6.106-13.623-13.619 0-7.508 6.116-13.625 13.623-13.625 7.508 0 13.622 6.117 13.622 13.625 0 7.513-6.114 13.619-13.622 13.619z"/>
+        <path class="sw mark-i2" d="M245.887 399.3h-10.593V328.55h10.593z"/>
+  </svg>
+</button>
+<div class="sr-only" aria-live="polite" id="live"></div>
+
+<script>
+var MEDIA = {};
+(function(){
+  var root = document.documentElement;
+  var main = document.querySelector('main');
+  var btn = document.getElementById('switch');
+  var live = document.getElementById('live');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Fill media sources (in the real site these are plain file paths).
+  document.querySelectorAll('[data-src]').forEach(function(el){ el.src = MEDIA[el.getAttribute('data-src')]; });
+  document.querySelectorAll('[data-poster]').forEach(function(el){ el.poster = MEDIA[el.getAttribute('data-poster')]; });
+
+  // Play loops only while visible, never with reduced motion.
+  function play(v){ if (reduced) return; var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) play(e.target); else e.target.pause(); });
+  }, { threshold: 0.25 }) : null;
+  document.querySelectorAll('video.loop').forEach(function(v){ if (io) io.observe(v); else play(v); });
+
+  // Mode switch: only adds the one-line comments.
+  function isOn(){ return root.getAttribute('data-mode') === 'unfiltered'; }
+  function setMode(mode){
+    root.setAttribute('data-mode', mode);
+    btn.setAttribute('aria-checked', String(mode === 'unfiltered'));
+    try { localStorage.setItem('ismini-mode', mode); } catch(e){}
+    try {
+      var u = new URL(location.href);
+      if (mode === 'unfiltered') u.searchParams.set('mode', 'unfiltered'); else u.searchParams.delete('mode');
+      history.replaceState(history.state, '', u);
+    } catch(e){}
+  }
+  btn.addEventListener('click', function(){
+    btn.classList.remove('press'); void btn.offsetWidth; btn.classList.add('press');
+    var next = isOn() ? 'pro' : 'unfiltered';
+    setMode(next);
+    live.textContent = next === 'unfiltered' ? 'Unfiltered mode on' : 'Professional mode on';
+  });
+
+  // Project panels: each has its own link (#chupa-chups etc.); Back and Esc close it.
+  var current = null, lastTile = null, openedHere = false;
+  function openPanel(panel){
+    if (current === panel) return;
+    if (current) closeVisual(current);
+    current = panel;
+    panel.classList.add('open');
+    document.body.classList.add('locked');
+    main.inert = true;
+    panel.scrollTop = 0;
+    var h = panel.querySelector('h2'); if (h) h.focus({ preventScroll: true });
+  }
+  function closeVisual(panel){
+    panel.classList.remove('open');
+    panel.querySelectorAll('video').forEach(function(v){ v.pause(); });
+  }
+  function closePanel(){
+    if (!current) return;
+    closeVisual(current); current = null;
+    document.body.classList.remove('locked');
+    main.inert = false;
+    if (lastTile) lastTile.focus({ preventScroll: true });
+  }
+  function route(){
+    var id = decodeURIComponent(location.hash.slice(1));
+    var panel = id ? document.getElementById(id) : null;
+    if (panel && panel.classList.contains('panel')) openPanel(panel); else closePanel();
+  }
+  document.querySelectorAll('.tile[href^="#"]').forEach(function(t){
+    if (t.getAttribute('href').length < 2) return;
+    t.addEventListener('click', function(){ lastTile = t; openedHere = true; });
+  });
+  function requestClose(){
+    if (openedHere) { openedHere = false; history.back(); }
+    else { history.replaceState(null, '', location.pathname + location.search); closePanel(); }
+  }
+  document.querySelectorAll('.panel .close').forEach(function(c){ c.addEventListener('click', requestClose); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && current) requestClose(); });
+  window.addEventListener('hashchange', route);
+  window.addEventListener('popstate', route);
+
+  setMode(isOn() ? 'unfiltered' : 'pro');
+  route();
+})();
+</script>
+</body>
+</html>

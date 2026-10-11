@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="pro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="description" content="Ismini Papanikolaou, Art Director and Motion Designer based in Oslo: experience, clients, recognition and education.">
+<link rel="canonical" href="https://ismini.eu/about.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ismini Papanikolaou">
+<meta property="og:title" content="About — Ismini Papanikolaou">
+<meta property="og:description" content="Ismini Papanikolaou, Art Director and Motion Designer based in Oslo: experience, clients, recognition and education.">
+<meta property="og:url" content="https://ismini.eu/about.html">
+<meta property="og:image" content="https://ismini.eu/assets/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>About — Ismini Papanikolaou</title>
+<script>
+(function(){
+  try {
+    var r = document.documentElement;
+    var p = new URLSearchParams(location.search).get('mode');
+    var m = (p === 'unfiltered' || p === 'pro') ? p : localStorage.getItem('ismini-mode');
+    if (m === 'unfiltered') r.setAttribute('data-mode', 'unfiltered');
+    if (localStorage.getItem('ismini-twist') === '1') r.setAttribute('data-twist', '1');
+  } catch (e) {}
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfbfa; --fg: #121212; --muted: #74726e; --line: #dcdad6; --ph: #eeece8; --red: #d7261e;
+  --quiet: "Hanken Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --loud: "Bricolage Grotesque", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --pad: clamp(1.25rem, 5vw, 5rem);
+  box-sizing: border-box; color-scheme: only light;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { height: 100%; scroll-padding-top: env(safe-area-inset-top, 0px); }
+body { margin: 0; min-height: 100%; background: var(--bg); color: var(--fg); font-family: var(--quiet); font-weight: 300; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a { color: inherit; }
+img, video { display: block; max-width: 100%; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Header */
+.top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1.5rem var(--pad); }
+.logo { font-weight: 400; font-size: 1.05rem; text-decoration: none; letter-spacing: -0.01em; }
+.nav { display: flex; gap: clamp(1rem, 3vw, 2.25rem); font-size: 0.95rem; }
+.nav a { text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid transparent; }
+.nav a:hover, .nav a[aria-current="page"] { border-bottom-color: currentColor; }
+[data-mode="pro"] .u { display: none; }
+[data-mode="unfiltered"] .p { display: none; }
+[data-mode="unfiltered"] .top { font-family: var(--loud); }
+[data-mode="unfiltered"] .logo { font-weight: 700; }
+[data-mode="unfiltered"] .nav a { font-weight: 500; }
+
+/* Mode blocks */
+.mode-block { transition: opacity .35s ease; }
+[data-mode="pro"] .raw-about, [data-mode="unfiltered"] .pro-about { display: none; }
+.mode-block.enter { opacity: 0; }
+
+/* ---------- Professional About ---------- */
+.pro-about { padding: clamp(1.5rem, 5vw, 5rem) var(--pad) 9rem; max-width: 1320px; margin: 0 auto; }
+.pro-lead { font-weight: 200; font-size: clamp(1.9rem, 4vw, 3.6rem); line-height: 1.1; letter-spacing: -0.025em; margin: 0 0 1.25rem; max-width: 19em; }
+.pro-sub { color: var(--muted); font-size: clamp(1rem, 1.3vw, 1.15rem); margin: 0 0 clamp(3rem, 7vw, 6rem); }
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(1.5rem, 3vw, 3rem); }
+.facts h2 { font-weight: 400; font-size: 0.85rem; color: var(--muted); margin: 0 0 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.facts ul { list-style: none; margin: 0; padding: 0; font-size: 1rem; line-height: 1.5; }
+.facts li { margin-bottom: 0.7rem; }
+.facts li span { display: block; color: var(--muted); font-size: 0.88rem; }
+.ph-note { color: var(--muted); font-size: 0.88rem; }
+.pro-contact { margin-top: clamp(3rem, 7vw, 6rem); font-size: clamp(1.2rem, 2vw, 1.6rem); font-weight: 200; }
+.pro-contact a { text-decoration: none; border-bottom: 1px solid currentColor; }
+@media (max-width: 900px) { .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .facts { grid-template-columns: minmax(0, 1fr); } }
+
+
+
+/* Portrait */
+.pro-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: end; margin: 0 0 clamp(3rem, 7vw, 6rem); }
+.pro-head .pro-sub { margin-bottom: 0; }
+.portrait { width: 100%; height: auto; aspect-ratio: 788 / 878; object-fit: cover; background: #111; }
+@media (max-width: 760px) {
+  .pro-head { grid-template-columns: minmax(0, 1fr); }
+  .portrait { order: -1; width: min(72%, 280px); }
+}
+
+/* Experience timeline */
+.xp { margin: 0 0 clamp(3rem, 7vw, 5.5rem); }
+.xp h2 { font-weight: 400; font-size: 0.85rem; color: var(--muted); margin: 0; padding: 1rem 0 0.25rem; border-top: 1px solid var(--line); }
+.xp-row { display: grid; grid-template-columns: minmax(9rem, 2fr) minmax(12rem, 3fr) minmax(0, 6fr); gap: 1.5rem; padding: 1rem 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.xp-row p { margin: 0; }
+.xp-date { color: var(--muted); font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+.xp-role { font-size: 1.1rem; font-weight: 400; }
+.xp-role span { display: block; color: var(--muted); font-size: 0.9rem; font-weight: 300; }
+.xp-desc { font-size: 0.98rem; line-height: 1.55; color: var(--fg); max-width: 40em; }
+@media (max-width: 760px) { .xp-row { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; } .xp-desc:empty { display: none; } }
+
+
+/* Professional About refinements */
+.pro-lead { text-wrap: balance; max-width: 20em; }
+.pro-sub { max-width: 34em; line-height: 1.6; text-wrap: pretty; }
+.pro-sub + .pro-sub { margin-top: 0.75rem; }
+.xp-desc .xp-clients { display: block; margin-top: 0.35rem; color: var(--muted); }
+.clients { margin: 0 0 clamp(2.5rem, 6vw, 4.5rem); }
+.clients h2 { font-weight: 400; font-size: 0.85rem; color: var(--muted); margin: 0 0 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.clients ul { list-style: none; margin: 0; padding: 0; columns: 6; column-gap: clamp(1.5rem, 3vw, 3rem); font-size: 1rem; line-height: 1.5; }
+.clients li { break-inside: avoid; padding: 0.2rem 0; }
+.facts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 900px) { .clients ul { columns: 3; } .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .clients ul { columns: 2; } .facts { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Me, actually ---------- */
+.raw-about { padding: 0 0 6rem; }
+.raw-open { padding: clamp(1.5rem, 5vw, 4.5rem) var(--pad) clamp(3rem, 7vw, 6rem); max-width: 1320px; margin: 0 auto; }
+.raw-open h1 { font-family: var(--loud); font-weight: 800; font-size: clamp(3rem, 9vw, 8.5rem); line-height: 0.88; letter-spacing: -0.045em; margin: 0 0 1.75rem; }
+.raw-open p { font-family: var(--loud); font-size: clamp(1.1rem, 1.7vw, 1.45rem); line-height: 1.45; max-width: 30em; margin: 0; }
+.level {
+  display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap;
+  padding: 0 var(--pad); margin: 0 auto 1.75rem; max-width: 1320px;
+  font-family: var(--loud);
+}
+.level b { font-weight: 800; color: var(--red); font-size: clamp(0.95rem, 1.2vw, 1.1rem); }
+.level h2 { font-weight: 700; font-size: clamp(1.8rem, 3.6vw, 3.2rem); letter-spacing: -0.03em; line-height: 1; margin: 0; }
+.chapter { margin: 0 auto clamp(5rem, 11vw, 10rem); max-width: 1320px; }
+
+/* Level 1: the DS edit */
+.ds-wrap { display: grid; grid-template-columns: minmax(0, 340px) minmax(14rem, 26rem); gap: clamp(1.5rem, 4vw, 4rem); align-items: end; padding: 0 var(--pad); }
+.ds-screen {
+  background: #161616; padding: clamp(8px, 1vw, 14px); border-radius: clamp(10px, 1.4vw, 18px);
+  box-shadow: 0 1.5rem 3rem rgba(0,0,0,.18);
+}
+.ds-screen video { width: 100%; height: auto; aspect-ratio: 4 / 3; background: #000; image-rendering: pixelated; border-radius: 4px; }
+.ds-note { font-family: var(--loud); }
+.ds-note .big { font-weight: 800; font-size: clamp(3.5rem, 8vw, 7rem); line-height: 0.85; letter-spacing: -0.05em; color: var(--red); margin: 0 0 1rem; }
+.ds-note p { font-size: 1.05rem; line-height: 1.5; margin: 0 0 1rem; }
+.ds-note .hint { font-family: var(--quiet); color: var(--muted); font-size: 0.88rem; }
+
+/* Level 2: the desk */
+.desk-hint { padding: 0 var(--pad); margin: -0.75rem auto 1.5rem; max-width: 1320px; color: var(--muted); font-size: 0.92rem; }
+.desk { position: relative; margin: 0 var(--pad); touch-action: pan-y; }
+.card {
+  position: absolute; width: var(--cw, 230px); margin: 0;
+  background: #fff; padding: 8px 8px 0; box-shadow: 0 0.6rem 1.6rem rgba(40, 30, 20, .14);
+  transform: rotate(var(--rot, 0deg)); transition: box-shadow .2s ease, transform .2s ease;
+  cursor: grab; user-select: none; -webkit-user-select: none;
+}
+.card.lift { cursor: grabbing; box-shadow: 0 1.6rem 3rem rgba(40, 30, 20, .25); transform: rotate(calc(var(--rot, 0deg) * 0.3)) scale(1.03); transition: box-shadow .2s ease; }
+.card img, .card video { width: 100%; height: auto; pointer-events: none; background: var(--ph); }
+.card figcaption { font-family: var(--loud); font-weight: 500; font-size: 0.86rem; line-height: 1.3; padding: 0.55rem 0.15rem 0.7rem; }
+.card figcaption small { display: block; font-family: var(--quiet); font-weight: 300; color: var(--muted); font-size: 0.78rem; margin-top: 0.2rem; }
+.card.tagged::after {
+  content: ""; position: absolute; top: -10px; left: 50%; width: 64px; height: 20px; margin-left: -32px;
+  background: rgba(215, 38, 30, .78); transform: rotate(-3deg);
+}
+@media (max-width: 760px), (pointer: coarse) {
+  .desk {
+    height: auto !important; display: flex; align-items: flex-start; gap: 1.1rem;
+    overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; touch-action: auto;
+    margin: 0; padding: 1.4rem var(--pad) 2rem; scroll-padding-inline: var(--pad); scrollbar-width: none;
+  }
+  .desk::-webkit-scrollbar { display: none; }
+  .card { position: relative; left: auto !important; top: auto !important; flex: 0 0 auto; width: auto; margin: 0; scroll-snap-align: center; cursor: default; padding: 6px 6px 0; }
+  .card img, .card video { height: min(50vh, 420px); width: auto; max-width: 78vw; object-fit: cover; }
+  .card figcaption { width: 0; min-width: 100%; font-size: 0.8rem; }
+}
+
+
+/* Tattoo section */
+.twist { padding: clamp(3rem, 8vw, 7rem) max(var(--pad), 6.75rem) 2rem var(--pad); max-width: 1320px; margin: 0 auto; }
+.twist h2 { font-family: var(--loud); font-weight: 800; color: var(--red); font-size: clamp(2.8rem, 8.5vw, 8rem); line-height: 0.86; letter-spacing: -0.055em; margin: 0 0 clamp(2rem, 5vw, 4rem); }
+.twist-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 4fr) minmax(16rem, 4fr); gap: clamp(1rem, 2.5vw, 2.5rem); align-items: end; }
+.twist-grid figure { margin: 0; }
+.twist-grid img, .twist-grid video { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: center; background: var(--ph); }
+.twist-grid figcaption { font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+.twist-text { font-family: var(--loud); }
+.twist-text p { font-size: clamp(1.1rem, 1.6vw, 1.4rem); line-height: 1.4; margin: 0 0 1.1rem; }
+.twist-text .onon { font-weight: 800; font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -0.03em; line-height: 1; color: var(--red); margin: 1.5rem 0 1.25rem; }
+.twist-text .last { font-weight: 700; }
+.twist-text a { color: var(--fg); font-weight: 500; text-decoration: none; border-bottom: 2px solid var(--red); }
+@media (max-width: 760px) { .twist { padding-right: var(--pad); } }
+@media (max-width: 900px) {
+  .ds-wrap { grid-template-columns: minmax(0, 1fr); }
+  .twist-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .twist-text { grid-column: 1 / -1; }
+}
+
+
+/* Alignment with the header, mobile tweaks */
+.pro-about, .raw-open, .level, .chapter, .twist, .desk-hint { max-width: none; }
+@media (max-width: 760px) { .logo .surname { display: none; } }
+.hint-swipe { display: none; }
+@media (max-width: 760px), (pointer: coarse) { .hint-desk { display: none; } .hint-swipe { display: inline; } }
+
+
+/* Tighter hand-off from the desk to the tattoo section */
+.chapter.chapter-desk { margin-bottom: clamp(1.5rem, 3vw, 2.5rem); }
+.twist { padding-top: clamp(1.5rem, 3vw, 2.5rem); }
+
+/* Switch (fixed corner) */
+.switch {
+  position: fixed; z-index: 40; padding: 0; border: 0; background: none; cursor: pointer; color: var(--red);
+  right: calc(1.25rem + env(safe-area-inset-right, 0px)); bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  width: clamp(58px, 4.6vw, 70px);
+}
+.switch svg { display: block; width: 100%; height: auto; }
+.switch:focus-visible { outline: 2px solid var(--red); outline-offset: 5px; }
+.sw { fill: currentColor; }
+.plate-bg { fill: var(--bg); }
+.paddle-on { opacity: 0; transition: opacity 70ms linear 40ms; }
+.paddle-off { opacity: 1; transition: opacity 70ms linear 40ms; }
+[data-mode="unfiltered"] .paddle-on { opacity: 1; }
+[data-mode="unfiltered"] .paddle-off { opacity: 0; }
+.mark-i { transform-box: view-box; transform: translateY(37px); transition: transform 110ms ease-out; }
+[data-mode="unfiltered"] .mark-i { transform: none; }
+.mark-o { transition: opacity .4s ease; }
+.mark-i2 { opacity: 0; transition: opacity .4s ease .2s; }
+[data-twist="1"] .mark-o { opacity: 0; }
+[data-twist="1"] .mark-i2 { opacity: 1; }
+@keyframes press { 0% { transform: scale(1); } 35% { transform: scale(.955); } 100% { transform: scale(1); } }
+.switch.press svg { animation: press .26s cubic-bezier(.34, 1.6, .5, 1); }
+@keyframes wink { 0%, 100% { transform: scale(1); } 40% { transform: scale(1.12) rotate(-4deg); } }
+.switch.wink svg { animation: wink .7s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .paddle-on, .paddle-off, .mark-i, .mark-o, .mark-i2, .mode-block, .card { transition-duration: .01s !important; }
+  .switch.press svg, .switch.wink svg { animation: none; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">Ismini<span class="surname"> Papanikolaou</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="work.html"><span class="p">Work</span><span class="u">The stuff</span></a>
+    <a href="about.html" aria-current="page"><span class="p">About</span><span class="u">Me, actually</span></a>
+    <a href="contact.html"><span class="p">Contact</span><span class="u">Say hi</span></a>
+  </nav>
+</header>
+
+<main>
+  <!-- ===== Professional ===== -->
+  <section class="mode-block pro-about" aria-label="About">
+    <div class="pro-head">
+      <div>
+        <h1 class="pro-lead">Art&nbsp;Director and Motion&nbsp;Designer with over&nbsp;six&nbsp;years of experience across advertising, creative concepts, and visual storytelling.</h1>
+        <p class="pro-sub">Curious by nature, hands-on by choice. I enjoy taking ideas from concept to execution, exploring new technologies, and finding creative solutions to challenging briefs.</p>
+        <p class="pro-sub">Greek, based in Oslo. Largely self-taught, always learning.</p>
+      </div>
+    </div>
+    <div class="xp">
+      <h2>Experience</h2>
+      <div class="xp-row">
+        <p class="xp-date">Oct 2025 – Apr 2026</p>
+        <p class="xp-role">Art Director<span>4 Wise Monkeys, Athens</span></p>
+        <p class="xp-desc">Developed creative concepts and visual directions for digital, social, and integrated campaigns, contributing from initial ideation through design and execution.<span class="xp-clients">Clients included Chupa Chups, Mentos, Jack Daniel's, Corona, Novibet, and Papadopoulou.</span></p>
+      </div>
+      <div class="xp-row">
+        <p class="xp-date">May 2024 – Oct 2025</p>
+        <p class="xp-role">Junior Art Director<span>4 Wise Monkeys, Athens</span></p>
+        <p class="xp-desc"></p>
+      </div>
+      <div class="xp-row">
+        <p class="xp-date">Nov 2023 – May 2024</p>
+        <p class="xp-role">Designer<span>Advengers, Athens</span></p>
+        <p class="xp-desc">Visual design and motion for campaigns, digital content, and social media.<span class="xp-clients">Clients included Papadopoulou, Audi, Bentley, Praktiker, Endless, and Coffeeway.</span></p>
+      </div>
+      <div class="xp-row">
+        <p class="xp-date">Feb 2022 – Nov 2023</p>
+        <p class="xp-role">Motion Designer<span>Sleed, Athens</span></p>
+        <p class="xp-desc">Motion design, animation, visual effects, 3D modelling, and storyboarding for digital campaigns and social content.</p>
+      </div>
+      <div class="xp-row">
+        <p class="xp-date">Dec 2020 – Feb 2022</p>
+        <p class="xp-role">Junior Motion Designer<span>Sleed, Athens</span></p>
+        <p class="xp-desc"></p>
+      </div>
+    </div>
+    <div class="clients">
+      <h2>Selected clients</h2>
+      <ul><li>Novibet</li><li>Papadopoulou</li><li>Corona</li><li>Mentos</li><li>Chupa Chups</li><li>DUO</li><li>Everest</li><li>Jack Daniel's</li><li>Bioten</li><li>Frezyderm</li><li>AstraZeneca</li><li>MSD</li><li>Audi</li><li>Bentley</li><li>Praktiker</li><li>Endless</li><li>Coffeeway</li></ul>
+    </div>
+    <div class="facts">
+      <div>
+        <h2>Recognition</h2>
+        <ul>
+          <li>Gold — Social Media Awards 2025<span>DUO — Best Real-Time Response / Occasion-Based Marketing</span></li>
+          <li>Cannes Young Lions<span>2024 &amp; 2025 participant</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <ul>
+          <li>Kristiania University of Applied Sciences<span>Bachelor's in Computer Arts (in progress)</span><span>2026–2029</span></li>
+          <li>LIONS Nano MBA<span>42Courses</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Certifications</h2>
+        <ul>
+          <li>Creative Thinking<span>Cannes Lions, 2024</span></li>
+          <li>Norwegian — B1<span>Folkeuniversitetet, 2026</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="pro-contact">Working on something? <a href="mailto:ismini.papa.1998@gmail.com">ismini.papa.1998@gmail.com</a></p>
+  </section>
+
+  <!-- ===== Me, actually ===== -->
+  <section class="mode-block raw-about" aria-label="Me, actually">
+    <div class="raw-open">
+      <h1>Okay.<br>The unfiltered version.</h1>
+      <p>Six years in advertising, a Nintendo DSi, a few questionable decisions, and a tattoo that somehow ties it all together.<br>There's a story here.</p>
+    </div>
+
+    <div class="chapter">
+      <div class="level"><h2>Some things never change.</h2></div>
+      <div class="ds-wrap">
+        <div class="ds-screen"><video controls playsinline preload="none" poster="assets/about/first-edit-2010.jpg" src="assets/about/first-edit-2010.mp4" aria-label="My first edit, made in 2010"></video></div>
+        <div class="ds-note">
+          <p class="big">2010.</p>
+          <p>12-year-old me trying to be creative on a Nintendo DSi.<br>No clue that this would eventually become my job.<br>But here we are.</p>
+          <p class="hint">Sound on. It's 2010, after all.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter chapter-desk">
+      <div class="level"><h2>Things you don't see in the portfolio.</h2></div>
+      <p class="desk-hint"><span class="hint-desk">Go ahead, move things around. My desk was never this organised anyway.</span><span class="hint-swipe">Go ahead, swipe through. My desk was never this organised anyway.</span></p>
+      <div class="desk" id="desk">
+        <figure class="card tagged" data-r="1.664" data-rot="-3"><img src="assets/about/lamp.jpg" alt="Another perfectly normal day as a creative." loading="lazy"><figcaption>Another perfectly normal day as a creative.</figcaption></figure>
+        <figure class="card" data-r="1.567" data-rot="2.5"><video class="loop" muted loop playsinline preload="none" poster="assets/about/butt.jpg" src="assets/about/butt.mp4" aria-label="Asscrack discussions."></video><figcaption>Asscrack discussions.</figcaption></figure>
+        <figure class="card" data-r="1.523" data-rot="-1.5"><img src="assets/about/young-lions-night.jpg" alt="Young Lions 2025. The night shift." loading="lazy"><figcaption>Young Lions 2025. The night shift.</figcaption></figure>
+        <figure class="card" data-r="1.522" data-rot="3.5"><img src="assets/about/monkey.jpg" alt="All our clients. One set design." loading="lazy"><figcaption>All our clients. One set design.</figcaption></figure>
+        <figure class="card" data-r="1.367" data-rot="1.5"><img src="assets/about/award.jpg" alt="Best in Beauty, Health &amp; Pharma." loading="lazy"><figcaption>Best in Beauty, Health &amp; Pharma.</figcaption></figure>
+        <figure class="card" data-r="1.723" data-rot="-1"><img src="assets/about/sofa.jpg" alt="Crème de la crème." loading="lazy"><figcaption>Crème de la crème.</figcaption></figure>
+        <figure class="card" data-r="1.305" data-rot="3"><img src="assets/about/stranger.jpg" alt="Chupa Chups x Stranger Things, in progress." loading="lazy"><figcaption>Chupa Chups x Stranger Things, in progress.</figcaption></figure>
+        <figure class="card" data-r="1.314" data-rot="-2.5"><img src="assets/about/happymeal.jpg" alt="Birthday cake surprise from my team." loading="lazy"><figcaption>Birthday cake surprise from my team.</figcaption></figure>
+        <figure class="card" data-r="1.642" data-rot="-1.5"><video class="loop" muted loop playsinline preload="none" poster="assets/about/desk.jpg" src="assets/about/desk.mp4" aria-label="Feedback round."></video><figcaption>Feedback round.</figcaption></figure>
+        <figure class="card" data-r="1.172" data-rot="2.5"><img src="assets/about/young-lions-after-hours.jpg" alt="Young Lions, after hours." loading="lazy"><figcaption>Young Lions, after hours.</figcaption></figure>
+        <figure class="card" data-r="1.217" data-rot="-3"><img src="assets/about/plants.jpg" alt="Working from the jungle." loading="lazy"><figcaption>Working from the jungle.</figcaption></figure>
+        <figure class="card tagged" data-r="1.431" data-rot="-2"><img src="assets/about/metro.jpg" alt="My poster in the Athens metro." loading="lazy"><figcaption>My poster in the Athens metro.</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="twist" id="twist">
+      <h2>About that switch...</h2>
+      <div class="twist-grid">
+        <figure><img src="assets/about/tattoo-photo.jpg" alt="A red tattoo of a light switch on the back of Ismini's neck, labelled ON at the top and ON at the bottom" loading="lazy"><figcaption>Fresh.</figcaption></figure>
+        <figure><video class="loop" muted loop playsinline preload="none" poster="assets/about/tattoo-video.jpg" src="assets/about/tattoo-video.mp4" aria-label="Getting the tattoo"></video><figcaption aria-hidden="true">&nbsp;</figcaption></figure>
+        <div class="twist-text">
+          <p>Fun fact: the switch is real.<br>It's actually tattooed on my back.<br>And if you look closely, it doesn't say <span style="white-space:nowrap">ON / OFF</span>.</p>
+          <p class="onon">ON / ON</p>
+          <p class="last">So yes, there are two versions of this website. But mostly, I'm just me. All the time.</p>
+          <p><a href="contact.html">Say hi</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button class="switch" id="switch" role="switch" aria-checked="false" aria-label="Unfiltered mode">
+  <svg viewBox="117 -10 247 501" aria-hidden="true">
+    <rect class="plate-bg" x="136" y="9" width="209" height="463"/>
+    <path class="sw" fill-rule="evenodd" d="M127.104 0v481.187h226.978V0H127.104z M345.001 472.106H136.183V9.072H345.01v463.034h-.009z"/>
+    <g class="paddle paddle-on"><path class="sw" fill-rule="evenodd" d="M160.426 416.879L176.317 453.956H298.665L316.819 416.879L318.345 407.794L311.709 237.536V27.237H167.959L167.963 237.372L159.11 407.794Z M176.688 244.379H177.042V36.309H302.633V242.102L309.266 407.793H168.204Z"/></g>
+    <g class="paddle paddle-off"><g transform="matrix(1 0 0 -1 0 481.187)"><path class="sw" fill-rule="evenodd" d="M160.426 416.879L176.317 453.956H298.665L316.819 416.879L318.345 407.794L311.709 237.536V27.237H167.959L167.963 237.372L159.11 407.794Z M176.688 244.379H177.042V36.309H302.633V242.102L309.266 407.793H168.204Z"/></g></g>
+    <path class="sw mark-i" d="M245.887 130.887h-10.593V60.134h10.593v70.753z"/>
+    <path class="sw mark-o" fill-rule="evenodd" d="M239.08 341.225c-12.512 0-22.698 10.17-22.698 22.696 0 12.509 10.182 22.697 22.698 22.697 12.52 0 22.702-10.188 22.702-22.697 0-12.526-10.19-22.696-22.702-22.696z M239.08 377.528c-7.506 0-13.623-6.106-13.623-13.619 0-7.508 6.116-13.625 13.623-13.625 7.508 0 13.622 6.117 13.622 13.625 0 7.513-6.114 13.619-13.622 13.619z"/>
+    <path class="sw mark-i2" d="M245.887 399.3h-10.593V328.55h10.593z"/>
+  </svg>
+</button>
+<div class="sr-only" aria-live="polite" id="live"></div>
+
+<script>
+var MEDIA = {};
+(function(){
+  var root = document.documentElement;
+  var btn = document.getElementById('switch');
+  var live = document.getElementById('live');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.querySelectorAll('[data-src]').forEach(function(el){ el.src = MEDIA[el.getAttribute('data-src')]; });
+  document.querySelectorAll('[data-poster]').forEach(function(el){ el.poster = MEDIA[el.getAttribute('data-poster')]; });
+  document.querySelectorAll('.card img').forEach(function(i){ i.draggable = false; });
+
+  // Loops play only while visible.
+  function play(v){ if (reduced) return; var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) play(e.target); else e.target.pause(); });
+  }, { threshold: 0.25 }) : null;
+  function watchLoops(){ document.querySelectorAll('video.loop').forEach(function(v){ if (io) io.observe(v); }); }
+  watchLoops();
+
+  // Mode switch: swaps the whole About page.
+  function isOn(){ return root.getAttribute('data-mode') === 'unfiltered'; }
+  function setMode(mode, animate){
+    root.setAttribute('data-mode', mode);
+    btn.setAttribute('aria-checked', String(mode === 'unfiltered'));
+    try { localStorage.setItem('ismini-mode', mode); } catch(e){}
+    try {
+      var u = new URL(location.href);
+      if (mode === 'unfiltered') u.searchParams.set('mode', 'unfiltered'); else u.searchParams.delete('mode');
+      history.replaceState(null, '', u);
+    } catch(e){}
+    if (mode === 'pro') document.querySelectorAll('.raw-about video').forEach(function(v){ v.pause(); });
+    var block = document.querySelector(mode === 'unfiltered' ? '.raw-about' : '.pro-about');
+    if (animate && !reduced) { block.classList.add('enter'); requestAnimationFrame(function(){ requestAnimationFrame(function(){ block.classList.remove('enter'); }); }); }
+    if (mode === 'unfiltered') layoutDesk();
+    if (animate) window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+  }
+  btn.addEventListener('click', function(){
+    btn.classList.remove('press'); void btn.offsetWidth; btn.classList.add('press');
+    var next = isOn() ? 'pro' : 'unfiltered';
+    setMode(next, true);
+    live.textContent = next === 'unfiltered' ? 'Unfiltered mode on' : 'Professional mode on';
+  });
+
+  // The desk: a loose pile you can rearrange.
+  var desk = document.getElementById('desk');
+  var cards = Array.prototype.slice.call(desk.querySelectorAll('.card'));
+  var moved = false, z = 10;
+  function isPile(){ return window.matchMedia('(min-width: 761px) and (pointer: fine)').matches; }
+  function layoutDesk(){
+    if (!isPile() || moved || !desk.offsetWidth) return;
+    var W = desk.clientWidth, cw = W > 1100 ? 236 : 210;
+    var cols = Math.max(3, Math.floor(W / (cw * 0.86)));
+    var step = (W - cw) / (cols - 1);
+    var heights = []; for (var c = 0; c < cols; c++) heights.push(c % 2 ? 46 : 0);
+    cards.forEach(function(card, i){
+      var r = parseFloat(card.getAttribute('data-r')) || 1.3;
+      var h = cw * r + 56;
+      var col = 0; for (var c = 1; c < cols; c++) if (heights[c] < heights[col]) col = c;
+      var jx = ((i * 37) % 23) - 11, jy = ((i * 53) % 29) - 8;
+      card.style.setProperty('--cw', cw + 'px');
+      card.style.left = Math.round(col * step + jx) + 'px';
+      card.style.top = Math.round(heights[col] + jy) + 'px';
+      heights[col] += h * 0.9;
+    });
+    desk.style.height = Math.round(Math.max.apply(null, heights) + 70) + 'px';
+  }
+  cards.forEach(function(card){
+    card.style.setProperty('--rot', card.getAttribute('data-rot') + 'deg');
+    var sx, sy, ox, oy, id = null;
+    card.addEventListener('pointerdown', function(e){
+      if (!isPile() || e.button !== 0) return;
+      id = e.pointerId; card.setPointerCapture(id);
+      sx = e.clientX; sy = e.clientY; ox = card.offsetLeft; oy = card.offsetTop;
+      card.style.zIndex = ++z; card.classList.add('lift'); e.preventDefault();
+    });
+    card.addEventListener('pointermove', function(e){
+      if (e.pointerId !== id) return;
+      card.style.left = (ox + e.clientX - sx) + 'px';
+      card.style.top = Math.max(-40, oy + e.clientY - sy) + 'px';
+      moved = true;
+    });
+    function end(e){ if (e.pointerId !== id) return; id = null; card.classList.remove('lift'); }
+    card.addEventListener('pointerup', end); card.addEventListener('pointercancel', end);
+  });
+  window.addEventListener('resize', function(){ moved = false; layoutDesk(); });
+
+  // Tattoo section: once you've seen the twist, the switch says ON / ON for good.
+  var twist = document.getElementById('twist');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting && isOn() && root.getAttribute('data-twist') !== '1') {
+          root.setAttribute('data-twist', '1');
+          try { localStorage.setItem('ismini-twist', '1'); } catch(err){}
+          if (!reduced) { btn.classList.remove('wink'); void btn.offsetWidth; btn.classList.add('wink'); }
+        }
+      });
+    }, { threshold: 0.45 }).observe(twist);
+  }
+
+  setMode(isOn() ? 'unfiltered' : 'pro', false);
+  window.addEventListener('load', layoutDesk);
+})();
+</script>
+</body>
+</html>

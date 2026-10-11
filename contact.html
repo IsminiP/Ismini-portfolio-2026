@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="pro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="description" content="Get in touch with Ismini Papanikolaou, Art Director and Motion Designer based in Oslo.">
+<link rel="canonical" href="https://ismini.eu/contact.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ismini Papanikolaou">
+<meta property="og:title" content="Contact — Ismini Papanikolaou">
+<meta property="og:description" content="Get in touch with Ismini Papanikolaou, Art Director and Motion Designer based in Oslo.">
+<meta property="og:url" content="https://ismini.eu/contact.html">
+<meta property="og:image" content="https://ismini.eu/assets/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>Contact — Ismini Papanikolaou</title>
+<script>
+(function(){
+  try {
+    var r = document.documentElement;
+    var p = new URLSearchParams(location.search).get('mode');
+    var m = (p === 'unfiltered' || p === 'pro') ? p : localStorage.getItem('ismini-mode');
+    if (m === 'unfiltered') r.setAttribute('data-mode', 'unfiltered');
+    if (localStorage.getItem('ismini-twist') === '1') r.setAttribute('data-twist', '1');
+  } catch (e) {}
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfbfa; --fg: #121212; --muted: #74726e; --line: #dcdad6; --red: #d7261e;
+  --quiet: "Hanken Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --loud: "Bricolage Grotesque", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --pad: clamp(1.25rem, 5vw, 5rem);
+  box-sizing: border-box; color-scheme: only light;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { height: 100%; }
+body { margin: 0; min-height: 100%; display: grid; grid-template-rows: auto 1fr auto; background: var(--bg); color: var(--fg); font-family: var(--quiet); font-weight: 300; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1.5rem var(--pad); }
+.logo { font-weight: 400; font-size: 1.05rem; text-decoration: none; letter-spacing: -0.01em; }
+.nav { display: flex; gap: clamp(1rem, 3vw, 2.25rem); font-size: 0.95rem; }
+.nav a { text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid transparent; }
+.nav a:hover, .nav a[aria-current="page"] { border-bottom-color: currentColor; }
+[data-mode="pro"] .u { display: none; }
+[data-mode="unfiltered"] .p { display: none; }
+[data-mode="unfiltered"] .top { font-family: var(--loud); }
+[data-mode="unfiltered"] .logo { font-weight: 700; }
+[data-mode="unfiltered"] .nav a { font-weight: 500; }
+
+main { padding: clamp(1.5rem, 5vw, 4.5rem) max(var(--pad), 6.75rem) clamp(4rem, 8vw, 7rem) var(--pad); align-self: center; }
+.lead { margin: 0 0 clamp(2rem, 5vw, 4rem); }
+.lead.p { font-weight: 200; font-size: clamp(2.2rem, 5.5vw, 5rem); line-height: 1.02; letter-spacing: -0.03em; }
+.lead.u { font-family: var(--loud); font-weight: 800; font-size: clamp(3rem, 9vw, 8rem); line-height: 0.86; letter-spacing: -0.05em; }
+.aside { display: none; font-family: var(--loud); font-weight: 500; color: var(--red); font-size: clamp(1.05rem, 1.6vw, 1.35rem); margin: calc(clamp(2rem, 5vw, 4rem) * -0.6) 0 clamp(2rem, 5vw, 3.5rem); }
+[data-mode="unfiltered"] .aside { display: block; }
+
+.ways { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.ways li { display: grid; grid-template-columns: clamp(6rem, 16vw, 13rem) minmax(0, 1fr) 5.5rem; align-items: baseline; gap: 1rem; padding: clamp(0.9rem, 1.8vw, 1.4rem) 0; border-bottom: 1px solid var(--line); }
+.ways .k { color: var(--muted); font-size: 0.9rem; }
+.ways .v { font-size: clamp(1.25rem, 3vw, 2.6rem); font-weight: 200; letter-spacing: -0.02em; text-decoration: none; overflow-wrap: anywhere; transition: color .2s ease; }
+[data-mode="unfiltered"] .ways .v { font-family: var(--loud); font-weight: 700; letter-spacing: -0.03em; }
+.ways a.v:hover, .ways a.v:focus-visible { color: var(--red); }
+.ways a.v:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; }
+.copy { justify-self: end; font: inherit; font-size: 0.85rem; color: var(--fg); background: none; border: 1px solid var(--line); border-radius: 999px; padding: 0.35rem 0.9rem; cursor: pointer; }
+.copy:hover { border-color: var(--fg); }
+.copy:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.copy.done { border-color: var(--red); color: var(--red); }
+.where { margin: clamp(1.5rem, 3vw, 2.5rem) 0 0; color: var(--muted); font-size: 0.95rem; }
+@media (max-width: 760px) {
+  .logo .surname { display: none; }
+  main { padding-right: var(--pad); }
+  .ways li { grid-template-columns: minmax(0, 1fr) 5rem; }
+  .ways .k { grid-column: 1 / -1; }
+}
+
+/* Switch */
+.switch { position: fixed; z-index: 40; padding: 0; border: 0; background: none; cursor: pointer; color: var(--red);
+  right: calc(1.25rem + env(safe-area-inset-right, 0px)); bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); width: clamp(58px, 4.6vw, 70px); }
+.switch svg { display: block; width: 100%; height: auto; }
+.switch:focus-visible { outline: 2px solid var(--red); outline-offset: 5px; }
+.sw { fill: currentColor; } .plate-bg { fill: var(--bg); }
+.paddle-on { opacity: 0; transition: opacity 70ms linear 40ms; } .paddle-off { opacity: 1; transition: opacity 70ms linear 40ms; }
+[data-mode="unfiltered"] .paddle-on { opacity: 1; } [data-mode="unfiltered"] .paddle-off { opacity: 0; }
+.mark-i { transform-box: view-box; transform: translateY(37px); transition: transform 110ms ease-out; }
+[data-mode="unfiltered"] .mark-i { transform: none; }
+.mark-i2 { opacity: 0; } [data-twist="1"] .mark-o { opacity: 0; } [data-twist="1"] .mark-i2 { opacity: 1; }
+@keyframes press { 0% { transform: scale(1); } 35% { transform: scale(.955); } 100% { transform: scale(1); } }
+.switch.press svg { animation: press .26s cubic-bezier(.34, 1.6, .5, 1); }
+@media (prefers-reduced-motion: reduce) { .paddle-on, .paddle-off, .mark-i, .ways .v { transition-duration: .01s !important; } .switch.press svg { animation: none; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">Ismini<span class="surname"> Papanikolaou</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="work.html"><span class="p">Work</span><span class="u">The stuff</span></a>
+    <a href="about.html"><span class="p">About</span><span class="u">Me, actually</span></a>
+    <a href="contact.html" aria-current="page"><span class="p">Contact</span><span class="u">Say hi</span></a>
+  </nav>
+</header>
+
+<main>
+  <h1 class="lead p">Let's work together.</h1>
+  <h1 class="lead u">Say hi.</h1>
+  <p class="aside">A project, an idea, a random question? I'm all ears.</p>
+  <ul class="ways">
+    <li><span class="k">Email</span><a class="v" href="mailto:ismini.papa.1998@gmail.com">ismini.papa.1998@gmail.com</a><button class="copy" type="button" data-copy="ismini.papa.1998@gmail.com">Copy</button></li>
+    <li><span class="k">Phone</span><a class="v" href="tel:+4792071998">+47 920 71 998</a><button class="copy" type="button" data-copy="+47 920 71 998">Copy</button></li>
+    <li><span class="k">LinkedIn</span><a class="v" href="https://www.linkedin.com/in/ismini-p-61894a90/" target="_blank" rel="noopener">Ismini Papanikolaou</a><span></span></li>
+    <li><span class="k">Instagram</span><a class="v" href="https://www.instagram.com/ismini.papanikolaou/" target="_blank" rel="noopener">@ismini.papanikolaou</a><span></span></li>
+  </ul>
+  <p class="where">Based in Oslo, Norway.</p>
+</main>
+<div></div>
+
+<button class="switch" id="switch" role="switch" aria-checked="false" aria-label="Unfiltered mode">
+  <svg viewBox="117 -10 247 501" aria-hidden="true">
+    <rect class="plate-bg" x="136" y="9" width="209" height="463"/>
+    <path class="sw" fill-rule="evenodd" d="M127.104 0v481.187h226.978V0H127.104z M345.001 472.106H136.183V9.072H345.01v463.034h-.009z"/>
+    <g class="paddle paddle-on"><path class="sw" fill-rule="evenodd" d="M160.426 416.879L176.317 453.956H298.665L316.819 416.879L318.345 407.794L311.709 237.536V27.237H167.959L167.963 237.372L159.11 407.794Z M176.688 244.379H177.042V36.309H302.633V242.102L309.266 407.793H168.204Z"/></g>
+    <g class="paddle paddle-off"><g transform="matrix(1 0 0 -1 0 481.187)"><path class="sw" fill-rule="evenodd" d="M160.426 416.879L176.317 453.956H298.665L316.819 416.879L318.345 407.794L311.709 237.536V27.237H167.959L167.963 237.372L159.11 407.794Z M176.688 244.379H177.042V36.309H302.633V242.102L309.266 407.793H168.204Z"/></g></g>
+    <path class="sw mark-i" d="M245.887 130.887h-10.593V60.134h10.593v70.753z"/>
+    <path class="sw mark-o" fill-rule="evenodd" d="M239.08 341.225c-12.512 0-22.698 10.17-22.698 22.696 0 12.509 10.182 22.697 22.698 22.697 12.52 0 22.702-10.188 22.702-22.697 0-12.526-10.19-22.696-22.702-22.696z M239.08 377.528c-7.506 0-13.623-6.106-13.623-13.619 0-7.508 6.116-13.625 13.623-13.625 7.508 0 13.622 6.117 13.622 13.625 0 7.513-6.114 13.619-13.622 13.619z"/>
+    <path class="sw mark-i2" d="M245.887 399.3h-10.593V328.55h10.593z"/>
+  </svg>
+</button>
+<div class="sr-only" aria-live="polite" id="live"></div>
+
+<script>
+(function(){
+  var root = document.documentElement, btn = document.getElementById('switch'), live = document.getElementById('live');
+  function isOn(){ return root.getAttribute('data-mode') === 'unfiltered'; }
+  function setMode(mode){
+    root.setAttribute('data-mode', mode);
+    btn.setAttribute('aria-checked', String(mode === 'unfiltered'));
+    try { localStorage.setItem('ismini-mode', mode); } catch(e){}
+    try { var u = new URL(location.href); if (mode === 'unfiltered') u.searchParams.set('mode', 'unfiltered'); else u.searchParams.delete('mode'); history.replaceState(null, '', u); } catch(e){}
+  }
+  btn.addEventListener('click', function(){
+    btn.classList.remove('press'); void btn.offsetWidth; btn.classList.add('press');
+    var next = isOn() ? 'pro' : 'unfiltered'; setMode(next);
+    live.textContent = next === 'unfiltered' ? 'Unfiltered mode on' : 'Professional mode on';
+  });
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click', function(){
+      var t = b.getAttribute('data-copy');
+      function ok(){ b.textContent = 'Copied'; b.classList.add('done'); live.textContent = 'Copied to clipboard'; setTimeout(function(){ b.textContent = 'Copy'; b.classList.remove('done'); }, 1800); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(ok, function(){});
+    });
+  });
+  setMode(isOn() ? 'unfiltered' : 'pro');
+})();
+</script>
+</body>
+</html>
